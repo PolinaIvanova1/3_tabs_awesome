@@ -1,0 +1,113 @@
+@import url(
+'https://fonts.googleapis.com/css?family=Raleway'
+);
+
+@import url(
+'https://fonts.googleapis.com/css?family=Open+Sans'
+);
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    max-width: 1170px;
+    font-family: Open Sans, serif;
+}
+
+.pricing {
+    font-family: Raleway, serif;
+    max-width: 1170px;
+    padding: 50px 15px;
+    background: #F5F5F5;
+}
+
+.pricing__main {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.pricing__main__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    height: 50px;
+}
+
+.pricing__main__separator {
+    width: 143px;
+    height: 0;
+    border: 1px solid #EC7979;
+}
+
+.pricing__main__subtitle {
+    font-size: 14px;
+    text-align: center;
+    color: #86878B;
+    height: 50px;
+    line-height: 40px;
+    padding: 10px 0;
+}
+
+.pricing__info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pricing__info__block {
+    text-align: center;
+    align-items: center;
+    height: 450px;
+    width: 320px;
+    list-style-type: none;
+}
+
+.pricing__info__block__active {
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+    margin: -20px 20px 0 20px;
+}
+
+.pricing__info__block__title {
+    height: 53px;
+    line-height: 53px;
+    background: #333333;
+    border: 1px solid #F5F5F5;
+    font-family: 'Open Sans', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.pricing__info__block__cost {
+    height: 89px;
+    line-height: 89px;
+    background: #333333;
+    border: 1px solid #F5F5F5;
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.pricing__info__block__motto {
+    height: 44px;
+    line-height: 44px;
+    background: #333333;
+    border: 1px solid #F5F5F5;
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pricing__info__block__info {
+    height: 44px;
+    line-height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #86878B;
+}
