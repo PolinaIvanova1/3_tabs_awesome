@@ -42,6 +42,7 @@ body {
 
 .pricing__main__subtitle {
     font-size: 14px;
+    font-weight: normal;
     text-align: center;
     color: #86878B;
     height: 50px;
