@@ -9,6 +9,8 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: auto;
 }
 
@@ -67,4 +69,103 @@ body {
     color: #FFFFFF;
     margin-top: 50px;
     cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1170px;
+    height: 622px;
+}
+
+.contact__title {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.contact__separator {
+    width: 170px;
+    height: 0;
+    border: 1px solid #EC7979;
+}
+
+.contact__subtitle {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #86878B;
+}
+
+.contact__info__form {
+    display: flex;
+    align-items: end;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.contact__info__form input {
+    border: 0;
+    padding: 0;
+    margin: 15px 50px;
+    width: 370px;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.contact__info__form input::placeholder {
+    color: #BDBDBD;
+}
+
+.contact__button {
+    background: #EC7979;
+    font-family: 'Open Sans', serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    width: 370px;
+    height: 58px;
+    border: none;
+    margin-top: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1510px;
+    height: 164px;
+    background: #000000;
+}
+
+.footer__media img {
+    width: 48px;
+    height: 48px;
+    padding: 16px;
+}
+
+
+.footer__end {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
 }
