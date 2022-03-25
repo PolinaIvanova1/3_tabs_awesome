@@ -139,6 +139,7 @@ body {
 .banner__info__button:hover {
     background: rgba(255, 255, 255, 50%);
     text-shadow: #FFFFFF 1px 0 10px;
+    box-shadow: #FFFFFF 1px 0 50px;
 }
 
 .banner__form {
@@ -153,9 +154,8 @@ body {
 }
 
 .banner__form:hover {
-    box-shadow: #FFFFFF 1px 0 10px;
+    box-shadow: #FFFFFF 1px 0 50px;
 }
-
 
 .banner__form h4 {
     font-family: 'Open Sans', serif;
