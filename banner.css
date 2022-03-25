@@ -23,13 +23,21 @@ body {
     box-sizing: border-box;
 }
 
+.header__logo img {
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.header__logo img:hover {
+    transform: scale(1.2);
+}
+
 .header__nav {
     display: flex;
     align-items: center;
     text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
-
 }
 
 .header__nav__link {
@@ -40,6 +48,14 @@ body {
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.header__nav__link:hover {
+    font-weight: bolder;
+    transform: scale(1.5);
+    color: #EC7979;
+    text-shadow: #FFFFFF 1px 0 10px;
 }
 
 .banner {
@@ -54,6 +70,15 @@ body {
     box-sizing: border-box;
 }
 
+.banner__info img {
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.banner__info img:hover {
+    transform: scale(1.2);
+}
+
 .banner__info__name {
     font-family: 'Raleway', serif;
     font-weight: 500;
@@ -64,6 +89,12 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 70px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner__info__name:hover {
+    text-shadow: #FFFFFF 1px 0 10px;
 }
 
 .banner__info__separator {
@@ -81,6 +112,12 @@ body {
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner__info__subtitle:hover {
+    text-shadow: #FFFFFF 1px 0 10px;
 }
 
 .banner__info__button {
@@ -96,6 +133,12 @@ body {
     color: #FFFFFF;
     margin-top: 50px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner__info__button:hover {
+    background: rgba(255, 255, 255, 50%);
+    text-shadow: #FFFFFF 1px 0 10px;
 }
 
 .banner__form {
@@ -105,7 +148,14 @@ body {
     height: 450px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s;
 }
+
+.banner__form:hover {
+    box-shadow: #FFFFFF 1px 0 10px;
+}
+
 
 .banner__form h4 {
     font-family: 'Open Sans', serif;
@@ -150,7 +200,13 @@ body {
     width: 470px;
     height: 60px;
     margin-top: auto;
+    transition: 0.5s;
     cursor: pointer;
+}
+
+
+.banner__form__button:hover {
+    text-shadow: #FFFFFF 1px 0 10px;
 }
 
 .social {
@@ -171,8 +227,13 @@ body {
     line-height: 33px;
     display: flex;
     align-items: center;
-    text-transform: capitalize;
     color: #333333;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social__info__title:hover {
+    color: #EC7979;
 }
 
 .social__info__subtitle {
@@ -183,8 +244,20 @@ body {
     display: flex;
     align-items: center;
     color: #86878B;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social__info__subtitle:hover {
+    color: #EC7979;
 }
 
 .social__media img {
-    padding: 0 20px
+    padding: 0 20px;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.social__media img:hover {
+    transform: scale(1.2);
 }
