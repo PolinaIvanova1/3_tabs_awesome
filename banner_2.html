@@ -25,18 +25,28 @@
     <div class="contact__info">
         <form class="contact__info__form">
             <div>
-                <input type="text" placeholder="Name" name="name"> <br>
-                <input type="email" placeholder="Email" name="email"> <br>
-                <input type="password" placeholder="Password" name="password">
+                <div>
+                    <label>
+                        <input type="text" placeholder="Name" name="name" required>
+                    </label> <br>
+                    <label>
+                        <input type="email" placeholder="Email" name="email" required>
+                    </label> <br>
+                    <label>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <textarea placeholder="Message" name="message" rows="5"></textarea>
+                    </label>
+                </div>
             </div>
-            <div>
-                <input type="text" placeholder="Message" name="message">
-            </div>
+            <button class="contact__info__form__button">
+                Send Message
+            </button>
         </form>
     </div>
-    <button class="contact__button">
-        Send Message
-    </button>
 </section>
 <footer class="footer">
     <div class="footer__media">
