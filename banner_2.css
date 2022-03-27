@@ -1,0 +1,231 @@
+@import url(
+'https://fonts.googleapis.com/css?family=Raleway'
+);
+
+@import url(
+'https://fonts.googleapis.com/css?family=Open+Sans'
+);
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.banner2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url(assets/background_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 1510px;
+    height: 442px;
+}
+
+.banner2__title {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.banner2__title:hover {
+    text-shadow: #FFFFFF 1px 0 10px;
+}
+
+.banner2__separator {
+    width: 170px;
+    height: 0;
+    border: 1px solid #FFFFFF;
+}
+
+.banner2__subtitle {
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.banner2__subtitle:hover {
+    text-shadow: #FFFFFF 1px 0 10px;
+}
+
+
+.banner2__button {
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    height: 58px;
+    width: 270px;
+    background: none;
+    font-family: 'Open Sans', serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner2__button:hover {
+    background: rgba(255, 255, 255, 50%);
+    text-shadow: #FFFFFF 1px 0 10px;
+    box-shadow: #FFFFFF 1px 0 50px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1170px;
+    height: 622px;
+}
+
+.contact__title {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.contact__title:hover {
+    font-weight: bolder;
+}
+
+.contact__separator {
+    width: 170px;
+    height: 0;
+    border: 1px solid #EC7979;
+}
+
+.contact__subtitle {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #86878B;
+    transition: 0.5s;
+}
+
+.contact__subtitle:hover {
+    font-weight: bolder;
+}
+
+
+.contact__info__form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contact__info__form > div {
+    display: flex;
+}
+
+.contact__info__form label input, .contact__info__form label textarea {
+    border: 0;
+    padding: 0;
+    margin: 15px 50px;
+    width: 370px;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font-size: 14px;
+    line-height: 30px;
+    outline: none;
+    -moz-appearance: none;
+    font-family: 'Raleway', serif;
+    resize: none;
+}
+
+.contact__info__form input::placeholder, .contact__info__form textarea::placeholder {
+    color: #BDBDBD;
+}
+
+.contact__info__form__button {
+    background: #EC7979;
+    font-family: 'Open Sans', serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    width: 370px;
+    height: 58px;
+    border: none;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact__info__form__button:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #EC7979;
+    box-shadow: inset 0 0 0 3px #EC7979;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1510px;
+    height: 164px;
+    background: #000000;
+}
+
+.footer__media img {
+    width: 48px;
+    height: 48px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer__media img:hover {
+    transform: scale(1.2);
+}
+
+.footer__end {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+.footer__end:hover {
+    text-shadow: #FFFFFF 1px 0 10px;
+}
+
