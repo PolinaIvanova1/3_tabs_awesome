@@ -9,8 +9,9 @@
 .awesome {
     font-family: Raleway, serif;
     max-width: 1170px;
-    padding: 50px 15px;
+    padding: 0 15px;
     background: #ffffff;
+    margin-bottom: 80px;
 }
 
 .awesome__main {
