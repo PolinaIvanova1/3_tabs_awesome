@@ -75,7 +75,7 @@ body {
 }
 
 .customers__info__block:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .customers__info__block__rectangle {

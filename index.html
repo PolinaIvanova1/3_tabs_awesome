@@ -53,11 +53,11 @@
         <h4>
             Try Your <span>FREE</span> Trial Today
         </h4>
-        <input type="text" placeholder="Name" name="name"> <br>
-        <input type="email" placeholder="Email" name="email"> <br>
-        <input type="password" placeholder="Password" name="password"> <br>
+        <input type="text" placeholder="Name" name="name" required> <br>
+        <input type="email" placeholder="Email" name="email" required> <br>
+        <input type="password" placeholder="Password" name="password" required> <br>
         <button class="banner__form__button">
-            Get Started
+            <span>Get Started</span>
         </button>
     </form>
 </section>
@@ -111,7 +111,6 @@
                 Download
             </button>
         </div>
-
         <div class="main__block__image">
             <div>
                 <img src="assets/Statue%20of%20Liberty.svg" alt="Statue">
@@ -119,38 +118,55 @@
         </div>
     </div>
 </section>
-<section class="container">
-    <div class="container__main">
-        <h2 class="container__main__title">
+<section class="awesome">
+    <div class="awesome__main">
+        <h2 class="awesome__main__title">
             WHY THIS IS AWESOME
         </h2>
-        <hr class="container__main__separator"/>
-        <h5 class="container__main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h5>
+        <hr class="awesome__main__separator"/>
+        <h5 class="awesome__main__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h5>
     </div>
-    <div class="block">
-        <div class="content__block">
-            <div class="content__block__vector"><img src="assets/Vector.svg" alt="lamp"/></div>
-            <p class="content__block__bold"> Thoughtful design</p>
-            <p class="content__block__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+    <div class="awesome__block">
+        <div class="awesome__block__content">
+            <div class="awesome__block__content__vector">
+                <img src="assets/Vector.svg" alt="lamp"/>
+            </div>
+            <p class="awesome__block__content__bold">
+                Thoughtful design
+            </p>
+            <p class="awesome__block__content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum
-                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra. </p>
+                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+            </p>
         </div>
-        <div class="content__block">
-            <div class="content__block__vector"><img src="assets/Vector2.svg" alt="lamp"/></div>
-            <p class="content__block__bold">Thoughtful design</p>
-            <p class="content__block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+        <div class="awesome__block__content">
+            <div class="awesome__block__content__vector">
+                <img src="assets/Vector2.svg" alt="lamp"/>
+            </div>
+            <p class="awesome__block__content__bold">
+                Thoughtful design
+            </p>
+            <p class="awesome__block__content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum
-                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+            </p>
         </div>
-        <div class="content__block">
-            <div class="content__block__vector"><img src="assets/Vector3.svg" alt="lamp"/></div>
-
-            <p class="content__block__bold"> Thoughtful design</p>
-            <p class="content__block__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+        <div class="awesome__block__content">
+            <div class="awesome__block__content__vector">
+                <img src="assets/Vector3.svg" alt="lamp"/>
+            </div>
+            <p class="awesome__block__content__bold">
+                Thoughtful design
+            </p>
+            <p class="awesome__block__content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                 bibendum
-                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra. </p>
-        </div>
-        <div>
+                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+            </p>
         </div>
     </div>
 </section>
@@ -350,18 +366,28 @@
     <div class="contact__info">
         <form class="contact__info__form">
             <div>
-                <input type="text" placeholder="Name" name="name"> <br>
-                <input type="email" placeholder="Email" name="email"> <br>
-                <input type="password" placeholder="Password" name="password">
+                <div>
+                    <label>
+                        <input type="text" placeholder="Name" name="name" required>
+                    </label> <br>
+                    <label>
+                        <input type="email" placeholder="Email" name="email" required>
+                    </label> <br>
+                    <label>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <textarea placeholder="Message" name="message" rows="5"></textarea>
+                    </label>
+                </div>
             </div>
-            <div>
-                <input type="text" placeholder="Message" name="message">
-            </div>
+            <button class="contact__info__form__button">
+                Send Message
+            </button>
         </form>
     </div>
-    <button class="contact__button">
-        Send Message
-    </button>
 </section>
 <footer class="footer">
     <div class="footer__media">
