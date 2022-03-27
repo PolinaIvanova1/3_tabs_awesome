@@ -6,15 +6,7 @@
 'https://fonts.googleapis.com/css?family=Open+Sans'
 );
 
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 5% auto;
-    max-width: 1170px;
-    font-family: Open Sans, serif;
-}
-
-.container {
+.awesome {
     font-family: Raleway, serif;
     max-width: 1170px;
     padding: 0 15px;
@@ -22,12 +14,12 @@ body {
     margin-bottom: 80px;
 }
 
-.container__main {
+.awesome__main {
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.container__main__title {
+.awesome__main__title {
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -35,13 +27,17 @@ body {
     text-align: center;
 }
 
-.container__main__separator {
+.awesome__main__title:hover {
+    font-weight: bolder;
+}
+
+.awesome__main__separator {
     width: 170px;
     height: 0;
     border: 1px solid #EC7979;
 }
 
-.container__main__subtitle {
+.awesome__main__subtitle {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -51,13 +47,30 @@ body {
     color: #86878B;
 }
 
-.block {
-    justify-content: space-between;
-    align-items: center;
+.awesome__main__subtitle:hover {
+    font-weight: bolder;
+}
+
+.awesome__block {
     display: flex;
 }
 
-.content__block__vector {
+.awesome__block__content {
+    transition: transform .5s;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.awesome__block__content:nth-child(2) {
+    margin: 0 20px;
+}
+
+.awesome__block__content:hover {
+    transform: scale(1.2);
+}
+
+.awesome__block__content__vector {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,29 +81,13 @@ body {
     box-sizing: border-box;
 }
 
-.content__block__bold {
+.awesome__block__content__bold {
     font-family: Open Sans, serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: capitalize;
 }
 
-.content__block {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.content__block:nth-child(2) {
-    margin: 0 20px;
-}
-
-.content__block__text {
+.awesome__block__content__text {
     text-align: center;
 }
