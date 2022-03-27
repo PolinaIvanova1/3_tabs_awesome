@@ -6,16 +6,10 @@
 'https://fonts.googleapis.com/css?family=Open+Sans'
 );
 
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 5% auto;
-    max-width: 1170px;
-    font-family: Open Sans, serif;
-}
-
 .main {
+    font-family: Open Sans, serif;
     padding: 0 16px;
+    max-width: 1170px;
 }
 
 .main__tabs {
