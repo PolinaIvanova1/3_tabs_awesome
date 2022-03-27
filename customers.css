@@ -34,6 +34,11 @@ body {
     height: 50px;
 }
 
+.customers__main__title:hover {
+    font-weight: bolder;
+}
+
+
 .customers__main__separator {
     width: 143px;
     height: 0;
@@ -50,14 +55,27 @@ body {
     padding-top: 10px;
 }
 
+.customers__main__subtitle:hover {
+    font-weight: bolder;
+}
+
+
 .customers__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.customers__info__block {
+    transition: 0.5s;
+}
+
 .customers__info__block:nth-child(2) {
     margin: 0 20px;
+}
+
+.customers__info__block:hover {
+    transform: scale(1.2);
 }
 
 .customers__info__block__rectangle {
