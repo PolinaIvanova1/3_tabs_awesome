@@ -61,8 +61,7 @@
 .pricing__info__block {
     text-align: center;
     align-items: center;
-    height: 450px;
-    width: 320px;
+    width: 370px;
     list-style-type: none;
     transition: 0.5s;
 }
@@ -119,3 +118,91 @@
     font-size: 18px;
     color: #86878B;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .pricing__main__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .pricing__main__separator {
+        width: 144px;
+    }
+
+    .pricing__main__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .pricing__info__block {
+        width: 317px;
+    }
+
+    .pricing__info__block__cost {
+        font-size: 36px;
+    }
+
+    .pricing__info__block__motto, .pricing__info__block__info {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .pricing {
+        padding: 25px 5px;
+    }
+
+    .pricing__main {
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .pricing__main__separator {
+        width: 134px;
+    }
+
+    .pricing__main__subtitle {
+        line-height: 16px;
+        height: 0;
+    }
+
+    .pricing__info {
+        display: block;
+    }
+
+    .pricing__info__block {
+        margin: 25px auto;
+        width: 288px;
+    }
+
+    .pricing__info__block:hover {
+        margin-top: 0;
+    }
+
+    .pricing__info__block__title {
+        font-size: 18px;
+        line-height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing__info__block__cost {
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing__info__block__motto, .pricing__info__block__info  {
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+

@@ -6,14 +6,6 @@
 'https://fonts.googleapis.com/css?family=Open+Sans'
 );
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
 .banner2 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url(assets/background_2.jpg);
     background-repeat: no-repeat;
@@ -22,8 +14,9 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 1510px;
-    height: 442px;
+    max-width: 1510px;
+    min-height: 442px;
+    width: 100%;
 }
 
 .banner2__title {
@@ -193,15 +186,15 @@ body {
     box-shadow: inset 0 0 0 3px #EC7979;
 }
 
-
 .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1510px;
-    height: 164px;
+    max-width: 1510px;
+    min-height: 164px;
     background: #000000;
+    width: 100%;
 }
 
 .footer__media img {
@@ -230,3 +223,137 @@ body {
     text-shadow: #FFFFFF 1px 0 10px;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .banner2__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .banner2__separator {
+        width: 144px;
+    }
+
+    .banner2__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .banner2__button {
+        height: 58px;
+        width: 318px;
+    }
+
+    .contact__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .contact__separator {
+        width: 144px;
+    }
+
+    .contact__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .contact__info__form label input, .contact__info__form label textarea {
+        margin: 15px 50px;
+        width: 330px;
+    }
+
+    .contact__info__form__button {
+        width: 318px;
+    }
+
+    .footer__media img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer__end {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+
+    .banner2 {
+        background-position: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .banner2__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .banner2__separator {
+        width: 134px;
+    }
+
+    .banner2__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 20px 40px;
+    }
+
+    .banner2__button {
+        height: 50px;
+        width: 287px;
+    }
+
+    .contact__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .contact__separator {
+        width: 134px;
+    }
+
+    .contact__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .contact__info__form > div {
+        display: block;
+    }
+
+    .contact__info__form label input, .contact__info__form label textarea {
+        margin: 15px 50px;
+        width: 288px;
+        line-height: 19px;
+    }
+
+    .contact__info__form input::placeholder, .contact__info__form textarea::placeholder {
+        color: #BDBDBD;
+    }
+
+    .contact__info__form__button {
+        width: 288px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .footer {
+        justify-content: space-evenly;
+    }
+
+    .footer__media img {
+        width: 22px;
+        height: 22px;
+        padding: 8px;
+    }
+
+    .footer__end {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+}

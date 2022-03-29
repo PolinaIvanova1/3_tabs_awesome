@@ -6,15 +6,6 @@
 'https://fonts.googleapis.com/css?family=Open+Sans'
 );
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5% auto;
-    max-width: 1170px;
-    font-family: Open Sans, serif;
-}
-
 .customers {
     font-family: Raleway, serif;
     max-width: 1170px;
@@ -31,13 +22,11 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    height: 50px;
 }
 
 .customers__main__title:hover {
     font-weight: bolder;
 }
-
 
 .customers__main__separator {
     width: 143px;
@@ -60,7 +49,6 @@ body {
     font-weight: bolder;
 }
 
-
 .customers__info {
     display: flex;
     justify-content: space-between;
@@ -71,16 +59,12 @@ body {
     transition: 0.5s;
 }
 
-.customers__info__block:nth-child(2) {
-    margin: 0 20px;
-}
-
 .customers__info__block:hover {
     transform: scale(1.1);
 }
 
 .customers__info__block__rectangle {
-    width: 317px;
+    width: 370px;
     height: 180px;
     background: #E2E2E2;
     border-radius: 10px;
@@ -110,8 +94,8 @@ body {
 }
 
 .customers__info__block__person__portrait {
-    width: 63px;
-    height: 63px;
+    width: 70px;
+    height: 70px;
 }
 
 .customers__info__block__person__text {
@@ -132,4 +116,85 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .customers__main__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .customers__main__separator {
+        width: 144px;
+    }
+
+    .customers__main__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .customers__info__block__rectangle {
+        width: 317px;
+        height: 180px;
+
+    }
+
+    .customers__info__block__person__portrait {
+        width: 63px;
+        height: 63px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+
+
+    .customers {
+        font-family: Raleway, serif;
+        max-width: 1170px;
+        padding: 50px 15px;
+        background: #fdfdfd;
+    }
+
+    .customers__main {
+        margin: 0 auto;
+    }
+
+    .customers__main__title {
+margin-bottom: 20px;
+    }
+
+    .customers__main__separator {
+        width: 134px;
+    }
+
+    .customers__main__subtitle {
+        line-height: 16px;
+    }
+
+    .customers__info__block:not(:first-child) {
+        display: none;
+    }
+
+    .customers__info__block__rectangle {
+        width: 288px;
+        height: 180px;
+    }
+
+    .customers__info__block__person__portrait {
+        width: 57px;
+        height: 57px;
+    }
+
+    .customers__info__block__person__text__name {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .customers__info__block__person__text__pro {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
 }
