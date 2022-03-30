@@ -34,9 +34,6 @@ body {
     cursor: pointer;
 }
 
-.header__logo img:hover {
-    transform: scale(1.2);
-}
 
 .header__nav {
     display: flex;
@@ -57,12 +54,6 @@ body {
     transition: 0.5s;
 }
 
-.header__nav__link:hover {
-    font-weight: bolder;
-    transform: scale(1.5);
-    color: #EC7979;
-    text-shadow: #FFFFFF 1px 0 10px;
-}
 
 .header__burger {
     display: none;
@@ -87,10 +78,6 @@ body {
     cursor: pointer;
 }
 
-.banner__info img:hover {
-    transform: scale(1.2);
-}
-
 .banner__info__name {
     font-family: 'Raleway', serif;
     font-weight: 500;
@@ -104,10 +91,6 @@ body {
     cursor: pointer;
     transition: 0.5s;
     max-width: 670px;
-}
-
-.banner__info__name:hover {
-    text-shadow: #FFFFFF 1px 0 10px;
 }
 
 .banner__info__separator {
@@ -130,10 +113,6 @@ body {
     transition: 0.5s;
 }
 
-.banner__info__subtitle:hover {
-    text-shadow: #FFFFFF 1px 0 10px;
-}
-
 .banner__info__button {
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
@@ -150,12 +129,6 @@ body {
     transition: 0.5s;
 }
 
-.banner__info__button:hover {
-    background: rgba(255, 255, 255, 50%);
-    text-shadow: #FFFFFF 1px 0 10px;
-    box-shadow: #FFFFFF 1px 0 50px;
-}
-
 .banner__form {
     background: #FFFFFF;
     border-radius: 10px;
@@ -165,10 +138,6 @@ body {
     flex-direction: column;
     cursor: pointer;
     transition: 0.5s;
-}
-
-.banner__form:hover {
-    box-shadow: #FFFFFF 1px 0 50px;
 }
 
 .banner__form h4 {
@@ -218,11 +187,6 @@ body {
     cursor: pointer;
 }
 
-
-.banner__form__button:hover {
-    text-shadow: #FFFFFF 1px 0 10px;
-}
-
 .social {
     width: 100%;
     min-height: 140px;
@@ -247,10 +211,6 @@ body {
     transition: 0.5s;
 }
 
-.social__info__title:hover {
-    color: #EC7979;
-}
-
 .social__info__subtitle {
     font-family: 'Raleway', serif;
     font-weight: 400;
@@ -263,18 +223,55 @@ body {
     transition: 0.5s;
 }
 
-.social__info__subtitle:hover {
-    color: #EC7979;
-}
-
 .social__media img {
     margin: 0 20px;
     transition: transform .5s;
     cursor: pointer;
 }
 
-.social__media img:hover {
-    transform: scale(1.2);
+
+@media screen and (min-width: 1281px) {
+    .header__logo img:hover {
+        transform: scale(1.2);
+    }
+    .header__nav__link:hover {
+        font-weight: bolder;
+        transform: scale(1.5);
+        color: #EC7979;
+        text-shadow: #FFFFFF 1px 0 10px;
+    }
+    .banner__info__name:hover {
+        text-shadow: #FFFFFF 1px 0 10px;
+    }
+    .banner__info__subtitle:hover {
+        text-shadow: #FFFFFF 1px 0 10px;
+    }
+    .banner__info img:hover {
+        transform: scale(1.2);
+    }
+    .banner__info__button:hover {
+        background: rgba(255, 255, 255, 50%);
+        text-shadow: #FFFFFF 1px 0 10px;
+        box-shadow: #FFFFFF 1px 0 50px;
+    }
+    .banner__form:hover {
+        box-shadow: #FFFFFF 1px 0 50px;
+    }
+
+    .banner__form__button:hover {
+        text-shadow: #FFFFFF 1px 0 10px;
+    }
+    .social__media img:hover {
+        transform: scale(1.2);
+    }
+
+    .social__info__title:hover {
+        color: #EC7979;
+    }
+
+    .social__info__subtitle:hover {
+        color: #EC7979;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -359,7 +356,7 @@ body {
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .header {
         padding: 0 10px;
         display: flex;
@@ -391,6 +388,7 @@ body {
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
 
     .banner__info img {
